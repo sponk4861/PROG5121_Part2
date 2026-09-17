@@ -20,7 +20,7 @@ public class Login {
     public boolean checkUserName(String username) {
         return username != null && username.contains("_") && username.length() <= 5;
     }
-public boolean checkPasswordComplexity(String password) {
+public boolean checkPasswordComplexity(String password ) {
         if (password == null || password.length() < 8) {
             return false;
         }
