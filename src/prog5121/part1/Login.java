@@ -43,7 +43,7 @@ public boolean checkCellPhoneNumber(String cellNumber) {
         return matcher.matches();
     }
 
-    public String registerUser(String username, String password, String cellNumber, String firstName, String lastName) {
+    public String registerUser( String username, String password, String cellNumber, String firstName, String lastName) {
         if (!checkUserName(username)) {
             return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
         }
